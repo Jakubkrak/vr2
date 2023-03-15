@@ -191,6 +191,20 @@ font-weight: 700;
     background-color: transparent;
     cursor: pointer;
 }
+.mobile-nav {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(49, 48, 48);
+    width: 280px;
+    height: 100vh;
+    padding: 20px;
+}
+.mobile-nav .top-menu {
+    display: flex;
+    flex-direction: column;
+}
 
 @media (max-width:1200px) {
     .banner-tittle {
@@ -212,6 +226,11 @@ font-weight: 700;
 .top nav {
     display: none;
 }
+.mobile-nav {
+    display: block;
+    transform: translateX(-102%);
+    transition: transform 0.4s;
+}
 }
 @media (max-width: 930px){
     .img{
@@ -225,6 +244,11 @@ font-weight: 700;
         display: block;
 
     }
+}
+
+
+.showMenu {
+    transform: translateX(0);
 }
 
 
